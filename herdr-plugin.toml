@@ -1,0 +1,12 @@
+id = "dimon.context-locator"
+name = "Herdr Context Locator"
+version = "0.1.0"
+min_herdr_version = "0.8.2"
+description = "Copy a self-describing locator for the focused agent's canonical session context"
+platforms = ["macos", "linux"]
+
+[[actions]]
+id = "copy-focused-context"
+title = "Copy focused agent context locator"
+contexts = ["pane"]
+command = ["python3", "scripts/copy_context_locator.py"]
